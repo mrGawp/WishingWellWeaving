@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishing Well Weaving</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <span>Wishing Well Weaving</span>
+            </div>
+            <div class="header-image">
+                <a href="#"><img src="logo.jpeg" alt="Wishing Well Weaving Logo"></a>
+            </div>
+            <nav class="header-nav">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1>Welcome to Wishing Well Weaving</h1>
+                    <h2>You wish, I weave!</h2>
+                    <p>
+                        Wishing Well Weaving was founded by Ann Mainville-Neeson, a hobby weaver in Ottawa, Canada, to
+create unique, custom handwoven projects of all kinds, hence the tag line “You Wish, I Weave”.
+                    </p>
+                    <p>
+                        Ann fell in love with weaving when her dad bought her first loom in 2017. After retiring from a
+                        lengthy career as a lawyer, Ann has focussed on learning and honing a variety of weaving skills
+                        and techniques. Ann now has numerous looms (one loom is never enough…) and enjoys
+                        complex weaving on 4, 8 and 12 shafts, as well as tapestry, inkle and tablet weaving. Ann
+                        designs her own projects, experimenting with materials and weave structures. In 2021, to
+                        honour her husband’s family Scottish heritage, she designed a family tartan which is registered
+                        with the Scottish Register of Tartans.
+                    </p>
+                    <p>
+                        Ann is also a beginner spinner, focussed mainly on making “chiengora” wool from the fur of her
+                        beautiful collies which she uses in crochet, knitting or weaving projects.
+                    </p>
+                    <p>
+                        Ann is a member of the Ottawa Valley Weavers and Spinners Guild.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="ScarfGif.gif" alt="Handwoven scarf">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="gallery-slideshow">
+                <div class="slide fade">
+                    <img src="slideshow/img0.JPG" alt="Gallery Image 1">
+                </div>
+                <div class="slide fade">
+                    <img src="slideshow/img1.JPG" alt="Gallery Image 2">
+                </div>
+                <div class="slide fade">
+                    <img src="slideshow/img2.JPG" alt="Gallery Image 3">
+                </div>
+                <div class="slide fade">
+                    <img src="slideshow/img3.JPG" alt="Gallery Image 4">
+                </div>
+                <div class="slide fade">
+                    <img src="slideshow/img4.JPG" alt="Gallery Image 5">
+                </div>
+                <div class="slide fade">
+                    <img src="slideshow/img5.JPG" alt="Gallery Image 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or would like to discuss a custom project, please feel free to get in touch!</p>
+                <p><strong>Name:</strong> Ann Mainville-Neeson</p>
+                <p><strong>Email:</strong> <a href="mailto:wishingwellweaving@gmail.com">wishingwellweaving@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slide");
+            slides.forEach((slide, index) => {
+                slide.style.opacity = 0; 
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex-1].style.opacity = 1;
+            setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+        showSlides();
+    </script>
+</body>
+</html>
