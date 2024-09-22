@@ -261,13 +261,15 @@ p {
         text-align: center;
     }
 
-    .about-text {
+    .about-image {
+        order: -1; /* Move the image before the text */
         width: 100%;
-        order: -1;
+        margin-bottom: 20px; /* Add space between the image and text */
     }
 
-    .about-image {
+    .about-text {
         width: 100%;
+        text-align: center; /* Center the text on smaller screens */
     }
 
     .about-image img {
